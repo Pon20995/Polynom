@@ -99,13 +99,23 @@ namespace Task_4._5
                 int coef = Degrees[degreeIndex];
                 if (coef != 0)
                 {
+                     if (coef != 0)
+                {
                     if (coef > 0)
                     {
                         sb.Append("+");
                     }
                     sb.Append(coef);
-                    sb.Append("×^");
-                    sb.Append(degreeIndex);
+           
+                    if (degreeIndex != 1)
+                    {
+                        sb.Append("×^");
+                        sb.Append(degreeIndex);
+                    }
+                    else
+                    {
+                        sb.Append("×");
+                    }
                 }
             }
           
